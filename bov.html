@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .go{
+            width: 400px;
+            height: 400px;
+            border: 6px solid brown;
+        box-shadow: 10px 30px 30px green;
+        overflow: hidden;
+        position: relative ;
+        top:100px;
+        animation: rabin 2s infinite;
+        left: 90px;
+
+        }
+        @keyframes rabin{
+0%{
+    top:50px;
+}
+50%{
+top:120px;
+}
+100%{
+
+top:50px;
+}
+
+
+
+
+        }
+        .go img {
+            width: 400px;
+            height: 400px;
+           object-fit: cover;
+           filter: grayscale();
+          
+        
+      
+        }
+        .go:hover {
+            border-radius: 100%;
+            transition: 3s;
+        }
+   .go img:hover {
+    transform: scale(1) rotate(6deg );
+  transition: 3s;
+filter: none;   }
+
+    </style>
+</head>
+<body>
+    <section>
+        <div class="go">
+            <img src="https://imgs.search.brave.com/VNeuVeVS8xWTsMnWMQ-r_uYMesJMuxTQVNpi-3OJ3dc/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTYz/NTE0NjUyL3Bob3Rv/L2Jhc2ViYWxsLWpl/cnNleS1vbi1jb2F0/LWhhbmdlci5qcGc_/cz02MTJ4NjEyJnc9/MCZrPTIwJmM9aWRu/OFlRdFhnb2VaUG1F/UlR1RGlneHREXzlx/Q1NBQUFobG85WWp3/RWRVVT0" alt="pp.jpg">
+        </div>
+    </section>
+</body>
+</html>

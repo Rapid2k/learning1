@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .vodka {
+            width: 300px;
+            height: 300px;
+            border: 2px solid blue;
+            overflow: hidden;
+            box-shadow: 30px 30px 50px lightblue;
+
+            position: relative;
+            top: 50px;
+            animation: gorey 2s infinite;
+            left: 50px;
+
+         
+ 
+
+        }
+        @keyframes gorey{
+            0%{
+                top:50px;
+            }
+50%{
+    top: 100px;
+}
+100%{
+    top:50px;
+}
+
+}
+
+
+        
+        .vodka:hover {
+            border-radius: 100%;
+            transition: 5s;
+       
+        
+        }
+     
+        
+       
+        .vodka img{
+
+            width: 300px;
+            height: 300px;
+           
+            object-fit: cover;
+            transition: 5s;
+            filter: grayscale();
+        }
+        .vodka img:hover{
+            transform: scale(2) ;
+            filter: none;
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="vodka">
+  
+        <img src="https://imgs.search.brave.com/voxM4euPqOQ3-Lve7v-TPjfQTmU9FN0-K-LzGFotrMc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9idXJz/dC5zaG9waWZ5Y2Ru/LmNvbS9waG90b3Mv/bWlzdHktbW91bnRh/aW4tcmFuZ2VzLWF0/LXN1bnJpc2UuanBn/P3dpZHRoPTEwMDAm/Zm9ybWF0PXBqcGcm/ZXhpZj0wJmlwdGM9/MA" alt="">
+    </div>
+ 
+</body>
+</html>

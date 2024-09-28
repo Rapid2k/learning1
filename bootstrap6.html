@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+ 
+        .lol img{
+            width: 300px;
+            height:300px;
+            border: 2px solid black;
+            object-fit: cover;
+            overflow: hidden;
+            border-radius: 100%;
+            
+           
+           
+
+        }
+        .lol{
+            position: relative;
+            top: -150px;
+            animation: killeryt 2s infinite;
+        }
+        @keyframes killeryt{
+
+            0%{
+                top: -150px;
+            }
+            50%{
+                top: 150px;
+
+            }
+            100%{
+                top: -150px;
+
+            }
+        }
+       
+        .lol img:hover{
+            filter: grayscale();
+           
+        }
+        .container{
+            align-items: center;
+            display: flex;
+      padding: 0%;
+      margin: 80px;
+          
+
+}
+    </style>
+</head>
+<body>
+    <section >
+        <div class="container">
+        <div class="row">
+
+            <div class="kop col-md-6">
+                <h1>TOMARI</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, ratione. Tempora placeat officiis ex rerum dolorem commodi, asperiores eos dolore ea ipsam. Corrupti fuga magnam tempora harum porro, maxime reprehenderit.</p> <button class="btn btn-primary "  data-bs-toggle="tooltip" data-bs-title="You have five received five message from Youtube."> Readmore
+                    <span class="badge bg-white text-danger" >5</span></button>
+            </div>
+            
+            <div class="col-md-6 p-5">
+                <div class="lol">
+                    <img src="https://cdn.pixabay.com/photo/2020/05/15/11/47/women-5173351_1280.png" alt="piza.jpg">
+                </div>
+                
+                
+           
+            </div>
+        </div>
+        
+    </div>
+    </section>
+
+   
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+
+</script>
+
+</body>
+</html>
